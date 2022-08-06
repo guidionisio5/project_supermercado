@@ -18,8 +18,11 @@ try{
 
     echo " Cadastro realizado com sucesso";
 
+    $con = null;
+
 }catch(PDOException $erro){
     echo $erro->getMessage();
+    die();
 }
 
 ?>

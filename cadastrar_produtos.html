@@ -12,37 +12,38 @@
 <body>
     <div id="container">
         <div id="titulo">
-            <h3>Cadastro de produtos</h3>
+            <h2>Cadastro de Produtos</h2>
         </div>
         <form action="backend/cadastrar_produtos.php" method="post">
             <div class="formulario">
                 <div class="item">
                     <label for="produto">Produto:</label>
-                    <input type="text" name="produto" id="produto" />
+                    <input type="text" name="produto" id="produto" required />
                 </div>
 
                 <div class="item">
                     <label for="valor">Valor:</label>
-                    <input type="text" name="valor" id="valor" />
+                    <input type="text" name="valor" id="valor" required />
                 </div>
 
                 <div class="item">
                     <label for="tipo">Tipo:</label>
-                    <input type="text" name="tipo" id="tipo" />
+                    <input type="text" name="tipo" id="tipo" required />
                 </div>
 
                 <div class="item">
                     <label for="marca">Marca:</label>
-                    <input type="text" name="marca" id="marca" />
-                </div>
-
-                <div class="item">
-                    <label for="descricao">Descrição:</label>
-                    <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                    <input type="text" name="marca" id="marca" required />
                 </div>
             </div>
-            <div class="botao">
-                <input type="submit" value="Cadastrar" />
+            
+            <div class="item-desc">
+                <label for="descricao">Descrição:</label>
+                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
+            </div>
+
+            <div class="centraliza-botao">
+                <input class="botao" type="submit" value="Cadastrar" />
             </div>
         </form>
     </div>
