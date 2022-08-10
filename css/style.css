@@ -17,13 +17,15 @@
     padding: 30px;
 }
 
+
+/* Inicio Cadastro de produtos */
 .formulario{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 50px;
 }
 
-label{
+.subtitulo{
     font-size: 20px;
     font-weight: bold;
 }
@@ -53,4 +55,38 @@ label{
     padding: 15px 30px;
     margin-top: 20px;
 }
+/* Fim Cadastro de produtos */
 
+/* Inicio Listar produtos */
+#grid-produtos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.figure-produtos{
+    border: 2px solid black;
+    border-radius: 4px;
+
+}
+
+.img-produtos{
+    width: 100%;
+}
+
+.figcaption-produtos{
+    display: grid;
+    padding: 20px;
+    gap: 20px;
+}
+
+.botao-produtos{
+    display: grid;
+    padding: 6px 12px;
+    margin: 10px auto;
+    background-color: #40d86e;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+}
+/* Fim Listar produtos */
