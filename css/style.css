@@ -90,3 +90,14 @@
     color: white;
 }
 /* Fim Listar produtos */
+
+/* Inicio Gerenciar produtos */
+#tabela{
+    display: grid;
+
+}
+
+.item-tabela {
+    text-align: center;
+}
+/* Fim Gerenciar produtos */

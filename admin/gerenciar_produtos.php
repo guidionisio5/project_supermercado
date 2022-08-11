@@ -35,7 +35,7 @@ try{
         <h2 class="titulo">Gerenciar Produtos</h2>
         <div id="tabela">
             <table border="1">
-                <tr>
+                <tr class="item-tabela">
                     <th>ID</th>
                     <th>Produto</th>
                     <th>Valor</th>
@@ -48,7 +48,7 @@ try{
                 <?php
                     foreach($dados as $prod):
                 ?>
-                <tr>
+                <tr class="item-tabela">
                     <td><?php echo $prod['id'];?></td>
                     <td><?php echo $prod['produto'];?></td>
                     <td><?php echo $prod['valor'];?></td>
