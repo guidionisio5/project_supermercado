@@ -1,6 +1,6 @@
 <?php
 
-include 'include/conexao.php';
+include 'includes/conexao.php';
 
 try{
     $sql = "SELECT * FROM tb_produtos";
@@ -32,7 +32,7 @@ try{
 </head>
 <body>
     <div id="container">
-        <h3 id="titulo">Lista de Produtos</h3>
+        <h2 class="titulo">Lista de Produtos</h2>
         <div id="grid-produtos">
             <?php
                 foreach($dados as $d):

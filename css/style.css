@@ -11,10 +11,10 @@
     margin: 0 auto;
 }
 
-#titulo {
+.titulo {
     text-align: center;
-    font-size: 30px;
-    padding: 30px;
+    font-size: 40px;
+    padding: 20px;
 }
 
 
