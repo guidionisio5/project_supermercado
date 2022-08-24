@@ -12,26 +12,28 @@
 <body>
     <div id="container">
         <h2 class="titulo">Cadastro de Produtos</h2>
-        <form action="../backend/_cadastrar_produtos.php" method="post">
+        <a href="gerenciar_produtos.php">Gerenciar Produtos</a>
+        <form action="../backend/_cadastrar_produtos.php" method="post" enctype="multipart/form-data">
             <div class="formulario">
                 <div class="item">
                     <label class="subtitulo" for="produto">Produto:</label>
                     <input type="text" name="produto" id="produto" required />
                 </div>
-
                 <div class="item">
                     <label class="subtitulo" for="valor">Valor:</label>
                     <input type="text" name="valor" id="valor" required />
                 </div>
-
                 <div class="item">
                     <label class="subtitulo" for="tipo">Tipo:</label>
                     <input type="text" name="tipo" id="tipo" required />
                 </div>
-
                 <div class="item">
                     <label class="subtitulo" for="marca">Marca:</label>
                     <input type="text" name="marca" id="marca" required />
+                </div>
+                <div class="item">
+                    <label class="subtitulo" for="imagem">Imagem:</label>
+                    <input type="file" name="imagem" id="imagem" required />
                 </div>
             </div>
             

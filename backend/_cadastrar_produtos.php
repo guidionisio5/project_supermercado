@@ -9,14 +9,18 @@ try{
     $tipo = $_POST['tipo'];
     $marca = $_POST['marca'];
     $descricao = $_POST['descricao'];
+    $imagem = $_FILES['imagem'];
 
-    $sql = "INSERT INTO tb_produtos(`produto`,`valor`,`tipo`,`marca`,`descricao`)VALUES('$produto','$valor','$tipo','$marca','$descricao')";
+    // upload da imagem
+
+
+    $sql = "INSERT INTO tb_produtos(`produto`,`valor`,`tipo`,`marca`,`descricao`,`imagem`)VALUES('$produto','$valor','$tipo','$marca','$descricao','$nome_final_imagem')";
 
     $comando = $con->prepare($sql);
 
     $comando->execute();
 
-    echo " Cadastro realizado com sucesso";
+    header('location: ../admin/cadastrar_produtos.html');
 
     $con = null;
 

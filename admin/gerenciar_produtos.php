@@ -33,6 +33,8 @@ try{
 <body>
     <div id="container">
         <h2 class="titulo">Gerenciar Produtos</h2>
+        <a href="cadastrar_produtos.html">Cadastrar Produtos</a>
+        <a href="index.html">Sair</a>
         <div id="tabela">
             <table border="1">
                 <tr class="item-tabela">
@@ -42,6 +44,7 @@ try{
                     <th>Tipo</th>
                     <th>Marca</th>
                     <th>Descrição</th>
+                    <th>Imagem</th>
                     <th>Alterar</th>
                     <th>Deletar</th>
                 </tr>
@@ -55,6 +58,7 @@ try{
                     <td><?php echo $prod['tipo'];?></td>
                     <td><?php echo $prod['marca'];?></td>
                     <td><?php echo $prod['descricao'];?></td>
+                    <td><?php echo $prod['imagem'];?></td>
                     <td>
                         <a href="../admin/alterar_produtos.php?id=<?php echo $prod['id'];?>">Alterar</a>
                     </td>

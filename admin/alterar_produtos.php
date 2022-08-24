@@ -40,31 +40,36 @@ try {
 <body>
     <div id="container">
         <h2 class="titulo">Alterar Produtos</h2>
-        <form action="../backend/_alterar_produtos.php" method="post">
+        <a href="gerenciar_produtos.php">Gerenciar Produtos</a>
+        <form action="../backend/_alterar_produtos.php" method="post" enctype="multipart/form-data">
             <div class="formulario">
                 <div class="item">
                     <label class="subtitulo" for="id">ID:</label>
                     <input type="text" name="id" id="id" value="<?php echo $dados[0]['id']?>" readonly/>
                 </div>
-
                 <div class="item">
                     <label class="subtitulo" for="produto">Produto:</label>
                     <input type="text" name="produto" id="produto" value="<?php echo $dados[0]['produto']?>"/>
                 </div>
-
                 <div class="item">
                     <label class="subtitulo" for="valor">Valor:</label>
                     <input type="text" name="valor" id="valor" value="<?php echo $dados[0]['valor']?>"/>
                 </div>
-
                 <div class="item">
                     <label class="subtitulo" for="tipo">Tipo:</label>
                     <input type="text" name="tipo" id="tipo" value="<?php echo $dados[0]['tipo']?>"/>
                 </div>
-
                 <div class="item">
                     <label class="subtitulo" for="marca">Marca:</label>
                     <input type="text" name="marca" id="marca" value="<?php echo $dados[0]['marca']?>"/>
+                </div>
+                <div class="item">
+                    <label class="subtitulo" for="imagem">Imagem nova:</label>
+                    <input type="file" name="imagem" id="imagem"/>
+                </div>
+                <div class="item">
+                    <h4 class="subtitulo">Imagem antiga:</h4>
+                    <img src="../img/upload/" alt="Imagem antiga do produto">
                 </div>
             </div>
             <div class="item-desc">
