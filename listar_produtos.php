@@ -32,13 +32,13 @@ try{
 </head>
 <body>
     <div id="container">
-        <h2 class="titulo">Lista de Produtos</h2>
+        <h2 class="titulo-produtos">Lista de Produtos</h2>
         <div id="grid-produtos">
             <?php
                 foreach($dados as $d):
             ?>
             <figure class="figure-produtos">
-                <img class="img-produtos" src="img/produto-faltando.png" alt="Imagem do Produto">
+                <img class="img-produtos" src="img/upload/<?php echo $d['imagem']?>" alt="Imagem do Produto">
                 <figcaption class="figcaption-produtos">
                     <h4><?php echo $d['produto'];?></h4>
                     <h5>R$ <?php echo $d['valor'];?></h5>

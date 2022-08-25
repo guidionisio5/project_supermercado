@@ -50,36 +50,36 @@
 }
 /* Fim Geral */
 
-/* Inicio Listar viagens */
-.titulo-viagens {
+/* Inicio Listar produtos */
+.titulo-produtos {
     font-size: 40px;
     padding: 20px;
     text-align: center;
 }
 
-#grid-viagens {
+#grid-produtos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.figure-viagens {
+.figure-produtos {
     border: 2px solid black;
     border-radius: 4px;
 }
 
-.img-viagens {
+.img-produtos {
     width: 100%;
     height: 240px;
 }
 
-.figcaption-viagens {
+.figcaption-produtos {
     display: grid;
     padding: 20px;
     gap: 20px;
 }
 
-.botao-viagens {
+.botao-produtos {
     padding: 6px 12px;
     margin: 10px auto;
     background-color: #40d86e;
