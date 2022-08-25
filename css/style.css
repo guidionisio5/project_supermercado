@@ -1,108 +1,204 @@
-*{
+/*  Inicio Geral */
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#container{
-    width: 80%;
+#container {
+    width: 70%;
     height: auto;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 30px 40px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 3px;
 }
 
 .titulo {
     text-align: center;
     font-size: 40px;
-    padding: 20px;
-}
-
-
-/* Inicio Cadastro de produtos */
-.formulario{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    gap: 50px;
 }
 
 .subtitulo{
-    font-size: 20px;
     font-weight: bold;
 }
 
-.item{
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-items: center;
+.sublink {
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #0000ff;
 }
 
-.item input{
-    padding: 10px 30px;
-}
-
-.item-desc {
-    display: grid;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    margin-top: 20px;
-}
-
-.centraliza-botao{
+.centraliza-botao {
     text-align: center;
 }
 
-.botao{
-    padding: 15px 30px;
-    margin-top: 20px;
+.botao {
+    padding: 10px;
+    width: 20vh;
+    font-size: 15px;
+    background-color: #40d86e;
+    font-weight: bold;
+    border-radius: 3px;
+    color: #000;
 }
-/* Fim Cadastro de produtos */
+/* Fim Geral */
 
-/* Inicio Listar produtos */
-#grid-produtos{
+/* Inicio Listar viagens */
+.titulo-viagens {
+    font-size: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+#grid-viagens {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
 
-.figure-produtos{
+.figure-viagens {
     border: 2px solid black;
     border-radius: 4px;
-
 }
 
-.img-produtos{
+.img-viagens {
     width: 100%;
+    height: 240px;
 }
 
-.figcaption-produtos{
+.figcaption-viagens {
     display: grid;
     padding: 20px;
     gap: 20px;
 }
 
-.botao-produtos{
-    display: grid;
+.botao-viagens {
     padding: 6px 12px;
     margin: 10px auto;
     background-color: #40d86e;
     font-weight: bold;
     border-radius: 3px;
-    color: white;
+    color: #000;
 }
-/* Fim Listar produtos */
+/* Fim Listar viagens */
 
-/* Inicio Gerenciar produtos */
-#tabela{
+/* Inicio Cadastro e Alterar Viagens */
+#container-alterar {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+#grid-formulario {
     display: grid;
-
+    grid-template-columns: repeat(1,1fr);
+    gap: 20px;
+    justify-items: center;
+    border-radius: 3px;
+    padding: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    width: 70%;
+    margin: 0 auto;
 }
 
-.item-tabela {
+.item-grid {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+    gap: 2px;
+}
+
+.item {
+    width: 350px;
+    height: 25px;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+
+.img-alterar {
+    width: 350px;
+    height: 300px;
+}
+
+.item-desc{
+    width: 350px;
+    height: 100px;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+/* Fim Cadastro e Alterar viagens */
+
+/* Inicio Gerenciar viagens */
+#container-gerenciar {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+}
+
+#tabela-gerenciar {
+    display: grid;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    padding: 50px;
+}
+
+.borda-gerenciar {
+    border-collapse: collapse;
+}
+
+.subtitulo-gerenciar {
+    padding: 10px;
+    border: 2px solid black;
+}
+
+.item-gerenciar {
     text-align: center;
+}
+
+.table-link {
+    text-align: center;
+    color: blue;
 }
 /* Fim Gerenciar produtos */
 
-/* Inicio Alterar produtos */
+/* Inicio Entrar admin */
+#container-login {
+    width: 50%;
+    height: 100vh;
+    margin: 0 auto;
+    display: grid;
+    align-content: center;
+}
 
+.grid-login {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    /* border: 2px solid #000; */
+    border-radius: 3px;
+    padding: 30px;
+}
 
-/* Fim Alterar produtos */
+.item-login {
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-items: center;
+}
+
+.input-login {
+    width: 35vw;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 3px;
+}
+/* Fim Entrar admin */

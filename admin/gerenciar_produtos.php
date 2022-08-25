@@ -31,39 +31,39 @@ try{
     <title>Gerenciar Produtos</title>
 </head>
 <body>
-    <div id="container">
-        <h2 class="titulo">Gerenciar Produtos</h2>
-        <a href="cadastrar_produtos.html">Cadastrar Produtos</a>
-        <a href="index.html">Sair</a>
-        <div id="tabela">
-            <table border="1">
-                <tr class="item-tabela">
-                    <th>ID</th>
-                    <th>Produto</th>
-                    <th>Valor</th>
-                    <th>Tipo</th>
-                    <th>Marca</th>
-                    <th>Descrição</th>
-                    <th>Imagem</th>
-                    <th>Alterar</th>
-                    <th>Deletar</th>
+    <div id="container-gerenciar">
+        <div id="tabela-gerenciar">
+            <h2 class="titulo">Gerenciar Produtos</h2>
+            <a class="sublink" href="cadastrar_produtos.html">Cadastrar Produtos</a>
+            <a class="sublink" href="index.html">Sair</a>
+            <table class="borda-gerenciar">
+                <tr class="item-gerenciar">
+                    <th class="subtitulo-gerenciar">ID</th>
+                    <th class="subtitulo-gerenciar">Produto</th>
+                    <th class="subtitulo-gerenciar">Valor</th>
+                    <th class="subtitulo-gerenciar">Tipo</th>
+                    <th class="subtitulo-gerenciar">Marca</th>
+                    <th class="subtitulo-gerenciar">Descrição</th>
+                    <th class="subtitulo-gerenciar">Imagem</th>
+                    <th class="subtitulo-gerenciar">Alterar</th>
+                    <th class="subtitulo-gerenciar">Deletar</th>
                 </tr>
                 <?php
                     foreach($dados as $prod):
                 ?>
                 <tr class="item-tabela">
-                    <td><?php echo $prod['id'];?></td>
-                    <td><?php echo $prod['produto'];?></td>
-                    <td><?php echo $prod['valor'];?></td>
-                    <td><?php echo $prod['tipo'];?></td>
-                    <td><?php echo $prod['marca'];?></td>
-                    <td><?php echo $prod['descricao'];?></td>
-                    <td><?php echo $prod['imagem'];?></td>
-                    <td>
-                        <a href="../admin/alterar_produtos.php?id=<?php echo $prod['id'];?>">Alterar</a>
+                    <td class="subtitulo-gerenciar"><?php echo $prod['id'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $prod['produto'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $prod['valor'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $prod['tipo'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $prod['marca'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $prod['descricao'];?></td>
+                    <td class="subtitulo-gerenciar"><?php echo $prod['imagem'];?></td>
+                    <td class="subtitulo-gerenciar">
+                        <a class="table-link" href="../admin/alterar_produtos.php?id=<?php echo $prod['id'];?>">Alterar</a>
                     </td>
-                    <td>
-                        <a href="../backend/_deletar_produtos.php?id=<?php echo $prod['id'];?>">Deletar</a>
+                    <td class="subtitulo-gerenciar">
+                        <a class="table-link" href="../backend/_deletar_produtos.php?id=<?php echo $prod['id'];?>">Deletar</a>
                     </td>
                 </tr>
                 <?php

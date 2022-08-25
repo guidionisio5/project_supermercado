@@ -10,40 +10,39 @@
 </head>
 
 <body>
-    <div id="container">
-        <h2 class="titulo">Cadastro de Produtos</h2>
-        <a href="gerenciar_produtos.php">Gerenciar Produtos</a>
+    <div id="container-formulario">
         <form action="../backend/_cadastrar_produtos.php" method="post" enctype="multipart/form-data">
-            <div class="formulario">
-                <div class="item">
+            <div id="grid-formulario">
+                <h2 class="titulo">Cadastro de Produtos</h2>
+                <a class="sublink" href="gerenciar_produtos.php">Gerenciar Produtos</a>
+                <div class="item-grid">
                     <label class="subtitulo" for="produto">Produto:</label>
-                    <input type="text" name="produto" id="produto" required />
+                    <input class="item" type="text" name="produto" id="produto" required />
                 </div>
-                <div class="item">
+                <div class="item-grid">
                     <label class="subtitulo" for="valor">Valor:</label>
-                    <input type="text" name="valor" id="valor" required />
+                    <input class="item" type="text" name="valor" id="valor" required />
                 </div>
-                <div class="item">
+                <div class="item-grid">
                     <label class="subtitulo" for="tipo">Tipo:</label>
-                    <input type="text" name="tipo" id="tipo" required />
+                    <input class="item" type="text" name="tipo" id="tipo" required />
                 </div>
-                <div class="item">
+                <div class="item-grid">
                     <label class="subtitulo" for="marca">Marca:</label>
-                    <input type="text" name="marca" id="marca" required />
+                    <input class="item" type="text" name="marca" id="marca" required />
                 </div>
-                <div class="item">
+                <div class="item-grid">
                     <label class="subtitulo" for="imagem">Imagem:</label>
-                    <input type="file" name="imagem" id="imagem" required />
+                    <input class="item" type="file" name="imagem" id="imagem" required />
+                </div>
+                <div class="item-grid">
+                    <label class="subtitulo" for="descricao">Descrição:</label>
+                    <textarea class="item-desc" name="descricao" id="descricao" cols="30" rows="10"></textarea>
+                </div>
+                <div class="centraliza-botao">
+                    <input class="botao" type="submit" value="Cadastrar" />
                 </div>
             </div>
-            
-            <div class="item-desc">
-                <label class="subtitulo" for="descricao">Descrição:</label>
-                <textarea name="descricao" id="descricao" cols="30" rows="10"></textarea>
-            </div>
-
-            <div class="centraliza-botao">
-                <input class="botao" type="submit" value="Cadastrar" />
             </div>
         </form>
     </div>
